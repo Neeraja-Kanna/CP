@@ -1,0 +1,6 @@
+streamlit
+roboflow
+pathlib
+numpy
+pandas
+cv2
