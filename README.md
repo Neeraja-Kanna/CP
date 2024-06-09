@@ -1,1 +1,1 @@
-# CP
+This CV model can perform object detection for construction safety gear and provide warnings on the dashboard. It is mainly designed to make it a handy monitoring toolfor field officers and stake holders to ensure manforce safety on the site
