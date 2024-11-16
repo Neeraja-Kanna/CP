@@ -1,5 +1,5 @@
 ## Purpose:
-This CV model can perform object detection for construction safety gear and provide warnings on the dashboard. It is mainly designed to make it a handy monitoring tool for field officers and stake holders to ensure manforce safety on the site
+This is an openCV model finetuned from Roboflow open source model,it can perform object detection for construction safety gear and provide warnings on the dashboard. It is mainly designed to make it a handy monitoring tool for field officers and stake holders to ensure manforce safety on the site
 
 **Streamlit app** : https://neeraja-construction-project3-1.streamlit.app/
 
