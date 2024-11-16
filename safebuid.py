@@ -1,4 +1,3 @@
-
 import streamlit as st
 from roboflow import Roboflow
 import pandas as pd
@@ -27,8 +26,8 @@ def predict_file(file_path, confidence=40, overlap=30):
     return result
 
 from PIL import Image
-icon = Image.open('Sabu1.jpeg')
-video_path="download (1).mp4"
+icon = Image.open('icon.jpeg')
+video_path="Construction Project/download.mp4"
 
 st.set_page_config(page_title="Safe Build", page_icon=icon, layout="wide")
 st.title("👷🏻‍♀️SAFE BUILD-AI")
