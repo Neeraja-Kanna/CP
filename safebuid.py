@@ -40,10 +40,14 @@ file1 = st.file_uploader("Upload an Image File", type=["jpg", "jpeg", "png"])
 st.sidebar.title("Empowering safe building with SAFE BUILD")
 st.sidebar.image('safetygear.png',caption="SAFETY GEAR ", use_column_width=True)
 
-# Check if a file is uploaded
 if file1 is not None:
-    # Example usage for an image
-    image_result = predict_file(file1.name)
+    # Save the uploaded file temporarily
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as temp_file:
+        temp_file.write(file1.read())
+        temp_file_path = temp_file.name
+
+    # Run prediction
+    image_result = predict_file(temp_file_path)
     print(image_result)
     
     # Extract class and confidence lists from the result
